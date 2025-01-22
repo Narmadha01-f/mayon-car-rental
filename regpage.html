@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+body{
+    background-color: rgb(179, 9, 226);
+    text-align: center;
+}
+
+.loginpage{
+    border: 5px double rgb(21, 20, 22);
+    border-radius: 10px;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+h1{
+    margin-top: 100px;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+}
+#mailid1,#pass1,#mailid2,#pass2,#fname{
+    border: 2px solid rgb(120, 125, 125);
+    border-radius: 10px;
+    height: 30px;
+}
+#btn1,#btn2{
+    background-color: rgb(52, 3, 85);
+    color: beige;
+    height : 30px;
+    text-align: center;
+    width : 90px
+    border : 2px dotted bisque;
+    border-radius: 10px;
+}
+
+#btn1,#btn2{
+        padding: 2px 25px;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+}
+#btn1-animate:hover {
+            background-color: #89017e;
+            box-shadow: 0 6px 10px rgba(214, 204, 226, 0.15);
+        }
+        #btn2-animate:hover {
+            background-color: #89017e;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        #loginlink{
+            color: grey;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayon Cars Login Form</title>
+    
+</head>
+<body>
+    <h2>Welcome To Mayon Cars!</h2>
+    
+    <form name="myform1" action="reg.php" method="POST">
+
+
+    <div class="loginpage">
+
+    <div class="login">
+        <h1>LOGIN</h1>
+        <input type="email" placeholder="Email" id="mailid1" size="45px" name="username" required><br><br>
+        <input type="password" placeholder="Password" id="pass1" size="45px" name="password" required><br><br>
+        <button  id="btn1">Login</button><br><br>
+        
+<p >Don't have an account? <a id="registerLink">Register here</a></p>
+</div>
+
+<div class="register" style="display: none;">
+    <h1>REGISTER</h1>
+    <input type="text" placeholder="Fullname" id="fname" name="fullname" size="45px" required ><br><br>
+    <input type="email" placeholder="Email" id="mailid2" size="45px" name="email" required><br><br>
+    <input type="password" placeholder="Password" id="pass2" size="45px"required name="password"><br><br>
+    <button  id="btn2">Register</button><br><br>
+
+   <p>Already have an account? <a id="RegsisterLink">Login here</a></p> 
+    
+</div>
+</form>
+<script src="repagescript.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+

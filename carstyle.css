@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    margin-left:23px ;
+    font-size: 50px;
+    letter-spacing: 2px;
+
+}
+.nav-btn svg{
+    position: fixed;
+    top : 5%;
+    left: 5%;
+    cursor: pointer;
+    height: 32px;
+    width: 33px;
+}
+/* Body Styling */
+body {
+    font-family :Georgia, 'Times New Roman', Times, serif;
+    background-color: #a4b4b4;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: hsl(237, 98%, 33%);
+    padding: 10px 0;
+}
+
+/* Navbar List Styling */
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navbar Item Styling */
+.navbar li {
+    margin: 0 20px;
+}
+
+/* Navbar Link Styling */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+   
+}
+
+/* Hover Effect */
+.navbar a:hover {
+    background-color: #999a98;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: darkblue;
+    letter-spacing: 2px;
+    margin-top: 70px;
+    margin-left: 70px;
+   
+}
+.firsth {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-top: 35px;
+    color: black;
+    margin-left: 27px;
+    animation: shrinkGrow 15s ease-in-out infinite;
+
+}
+@keyframes shrinkGrow {
+    0% {
+        font-size: 35px;
+    }
+    50% {
+        font-size: 20px;
+    }
+    100% {
+        font-size: 35px;
+    }
+}
+#para{
+    display: inline-block;
+    margin-top: 30px;
+    text-align: left;
+    text-align: justify;
+   letter-spacing: 2px;
+   overflow: hidden;
+   font-size: 20px;
+   font-weight: lighter;
+   opacity: 0;
+      animation: fadeIn 2s forwards;
+
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+    
+
+.img1{
+    background-size: cover; 
+    width: 650px;
+   margin-right: 5px;
+    height: 500px;
+    margin-top: 100px;
+    border-radius: 20px;
+    float: right;
+    animation: bounce 2s ease infinite;
+}
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+.a-head{
+border:1px  black;
+padding-top: 10px;
+padding-bottom: 19px;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 50px;
+    justify-content: left;
+  }
+.about-page{
+    font-size:20px ;
+    font-weight: lighter;
+    padding: 10px;
+    margin-left:15px ;
+    background-color: rgb(228, 228, 228);
+    border :1px solid rgb(193, 187, 187);
+    border-radius: 20px;
+   overflow: hidden;
+   text-align:justify;
+   margin-top : 40px
+
+     
+}
+.thirdh{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 250px;
+}
+/* Container for paragraphs */
+.advantage{
+    width: 100%; /* Full width of the parent */
+    max-width: 800px; /* Optional: Set max width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 50px; /* Optional: Add padding around the container */
+    column-count: 2; /* Divide content into 2 columns */
+    column-gap: 90px; /* Optional: Adjust the gap between the columns */
+    margin-top: 50px;
+    margin-left: 200px;
+    color: #333;
+    
+}
+
+/* Style for paragraphs */
+.advantage p {
+    font-size: 16px; /* Adjust font size */
+    line-height: 1.9; /* Adjust line height for better readability */
+    color: #333; /* Optional: Set the text color */
+    margin-bottom: 15px; /* Optional: Add space between paragraphs */
+}
+h4{
+    color: #01366f;
+    margin-top: 30px;
+    font-size: 20px;
+
+   
+}
+#us{
+    margin-top: 20px;
+   
+
+}
+#carental-content{
+    margin-top: 100px;
+}
+.carrent{
+    margin-left:30px ;
+    font-size: 30px;
+}
+  
+  .car-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4 equal columns */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    height: 150px;
+    width: 230px;
+    margin-top: 70px;
+  }
+  
+  .car1{
+    border :  1px solid ;
+    
+  }
+  .car-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 0px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+.car-item button{
+    color: deeppink;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    background-color: dimgray;
+}
+.car-item img{
+height: 200px;
+width: 250px;
+border-radius: 20px;
+}
+.car-item:hover {
+    transform: translateY(-12PX);
+    transition-duration: 3s ;
+}
+.car-grid svg{
+    margin-right: 200px;
+}
+#seat{
+    margin-right: 140px;
+    margin-bottom: 10px;
+    
+
+}
+.contact a {
+    display: inline-flex;
+    justify-content: center;
+    width: 60px;
+    background: grey;
+    height: 60px;
+    border: 2px solid rgb(192, 255, 247);
+    border-radius: 50%;
+    font-size: 20px;
+    margin-left: 30px;
+    padding: 0;
+    align-items: center;
+    color: #14131a;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+   
+}
+.contact a:hover {
+    background: #0cdbee;
+    color: #9c175e;
+    box-shadow: 0 0 20px #121814;
+}
+
+.
